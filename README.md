@@ -20,5 +20,5 @@ Para el despliegue de la página se tuvo que realizar los siguentes pasos:
 
 * Por ultimo se agrego el link de la pagina de produccion de GitHub Pages en el archivo README.
 ***
-[Proyecto final] ()
+[Proyecto final] (https://jcdelega.github.io/1-WEB-L-Bec-Final-Project/)
 
