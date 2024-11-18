@@ -5,7 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularion de inscripción Sustentavida</title>
 </head>
-<body>
-    <form action=""></form>
+<body style="background-color: gray">
+    <h1 style="color: aquamarine;text-align: center;font-size: 60px;font-family:courier;">Sustentavida</h1>
+    <hr>
+    <form style="font-size: 120%; color: whitesmoke;">
+        <br>
+        <p font-size: 200%;">Rellena el registro para el curso seleccionado, no olvides ningun campo</p>
+        <br>
+        <label for="full_name" >Ingresa tu nombre completo</label>
+        <input
+        id="full_name"
+            type="text"
+            name="fullname"
+            placeholder="Ingresa tu nombre completo"
+            maxlength="15"
+            minlength="2"
+            required
+        />
+        <input
+            type="text"
+            name="apellido"
+            placeholder="Ingresa tus dos apellidos"
+            maxlength="20"
+            minlength="2"
+            required
+        />
+        <label>
+            Introduce tu edad
+            <input
+            type="number"
+            name="edad"
+            placeholder="Tu edad aqui"
+            required
+        >
+        </label>
+        <br>
+        <br>
+        <label>
+            Introduce tu correo electrónico, a este correo quedaras suscrito y te llegaran boletines
+            <input
+            type="email"
+            name="correo"
+            placeholder="Escribe tu email"
+        </label>
+        <br>
+        <br>
+        <label>
+            Ingresa el día y hora deseado para tomar el curso en linea
+            <input
+            type="date"
+            name="dia_curso"
+            required
+            min="2024-11-18"
+            max="2025-01-31" 
+        >
+        </label>
+        <input
+            type="time"
+            name="hora_curso"
+            required
+        >
+        <br>
+        <br>
+        <label>
+            Por favor selecciona el curso que te llamo mas la atención, recuerda que solo puedes atender un curso por vez.
+            <br>
+            <select name="animal_favortio">
+                <option value="" selected hidden disabled >Selecciona la opción</option>
+                <option value="panel">Importancia y beneficios de los paneles solares</option>
+                <option value="hidrico">Agua; tratamiento, captacion y consumo consciente</option>
+                <option value="autoconsumo">Cero transgenicos, lo natural es lo esencial</option>
+                <option value="medicina_alternativa">Tintura y como guardarlas, basicas en la medicina alternativa</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label>
+            Si tienes un comentario o sugerencia nos ayudas mucho escribiendolo en el recuadro siguiente, valoramos mucho las opiniones, nos ayudan a crecer.
+            <textarea
+            name="observaciones"
+            rows="8"
+            cols="200"
+            placeholder="Ingresa observaciones o comentarios"
+        ></textarea>
+        </label>
+        <br>
+        <label>
+            Aceptas los terminos y condiciones del manejo de tus datos
+            <input
+                type="checkbox"
+                name="condiciones"
+                checked
+                required
+            >
+        </label>
+        <br>
+        <br>
+        <br>
+        <button type="submit">Inscribirme</button>
+        <button type="reset">Limpiar campos</button>
+     </form>
+     <hr>
 </body>
 </html>
